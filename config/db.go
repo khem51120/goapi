@@ -12,7 +12,7 @@ var DB *gorm.DB
 
 func ConnectDB() error {
 	var err error
-	var dsn = "host=ln.ichigozdata.win user=qvngikec dbname=qvngikec port=5432 password=mnmHBZ_IcR-lnolTfddSGrgYvYdDCMXU"
+	var dsn = "host=rain.db.elephantsql.com user=qvngikec dbname=qvngikec port=5432 password=mnmHBZ_IcR-lnolTfddSGrgYvYdDCMXU"
 	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		fmt.Println("postgres err: " + err.Error())
